@@ -763,3 +763,413 @@
 ## ENABLE 型
 
 ## HELP
+
+
+
+
+
+---
+
+# 語法一覧
+
+TELL 型
+tell
+tell O of N / tell O that SV / tell O to V
+
+remind
+remind O of N / remind O that SV / remind O to V
+
+convince
+convince O of N / convince O that SV / convince O to V
+
+persuade
+persuade O of N / persuade O that SV / persuade O to V
+
+warn
+warn O of N / warn O that SV / warn O to V / warn O not to V
+
+notify
+notify O of N / notify O that SV
+
+advise
+advise O of N / advise O that SV / advise O to V
+
+assure
+assure O of N / assure O that SV
+
+inform
+inform O of N / inform O that SV
+
+SAY 型
+say
+say to N that SV
+
+suggest
+suggest O to N
+
+explain
+explain to N that SV
+
+apologize
+apologize to N that SV / apologize to N for N
+
+mention
+mention to N that SV
+
+announce
+announce to N that SV
+
+admit
+admit to N that SV / admit Ving
+
+express
+express O to N
+
+propose
+propose O to N
+
+declare
+declare to N that SV
+
+confess
+confess to N that SV
+
+ROB 型
+rob
+rob O of N
+
+deprive
+deprive O of N
+
+cure
+cure O of N
+
+clear
+clear O of N
+
+ease
+ease O of N
+
+strip
+strip O of N
+
+empty
+empty O of N
+
+relieve
+relieve O of N
+
+rid
+rid O of N
+
+PROVIDE 型
+provide
+provide O with N / provide O for N / provide O to N
+
+supply
+supply O with N / supply O for N / supply O to N
+
+furnish
+furnish O with N / furnish O to N
+
+feed
+feed O with N / feed O to N
+
+present
+present O with N / present O to N
+
+fill
+fill O with N
+
+load
+load O with N / load O into N / load O onto N
+
+face
+face O with N
+
+confront
+confront O with N
+
+equip
+equip O with N
+
+endow
+endow O with N
+
+acquaint
+acquaint O with N
+
+charge
+charge O with N
+
+THANK 型
+thank
+thank O for N / thank O for Ving
+
+praise
+praise O for N / praise O for Ving
+
+admire
+admire O for N / admire O for Ving
+
+respect
+respect O for N / respect O for Ving
+
+commend
+commend O for N / commend O for Ving
+
+be grateful / be thankful
+be grateful to N for N / be thankful to N for N
+
+be obliged
+be obliged to N for N / be obliged to V
+
+apologize
+apologize to N for N / apologize to N for Ving
+
+blame
+blame O for N / blame O for Ving
+
+criticize
+criticize O for N / criticize O for Ving
+
+condemn
+condemn O for N / condemn O for Ving
+
+denounce
+denounce O for N / denounce O for Ving
+
+scold
+scold O for N / scold O for Ving
+
+punish
+punish O for N / punish O for Ving
+
+fine
+fine O for N / fine O 金額 for N
+
+prosecute
+prosecute O for N / prosecute O for Ving
+
+suspend
+suspend O for N / suspend O for Ving
+
+PERSUADE 型
+persuade
+persuade O into Ving / persuade O out of Ving / persuade O to V
+
+talk
+talk O into Ving / talk O out of Ving
+
+trick
+trick O into Ving
+
+bully
+bully O into Ving
+
+force
+force O into Ving
+
+scare / frighten
+scare O into Ving / frighten O into Ving
+
+needle
+needle O into Ving
+
+PREVENT 型
+prevent
+prevent O from Ving
+
+keep
+keep O from Ving
+
+stop
+stop O from Ving / stop Ving
+
+prohibit
+prohibit O from Ving
+
+ban
+ban O from Ving
+
+bar
+bar O from Ving
+
+inhibit
+inhibit O from Ving
+
+disable
+disable O from Ving / disable O from N
+
+restrain
+restrain O from Ving
+
+forbid
+forbid O to V / forbid O from Ving
+
+discourage
+discourage O from Ving
+
+dissuade
+dissuade O from Ving
+
+deter
+deter O from Ving
+
+excuse
+excuse O from Ving
+
+save
+save O from Ving / save O from N
+
+rescue
+rescue O from Ving / rescue O from N
+
+guard
+guard O from Ving / guard O from N
+
+protect
+protect O from Ving / protect O from N
+
+THINK 型
+think
+think of N / think about N / think that SV
+
+know
+know of N / know that SV
+
+hear
+hear of N / hear that SV
+
+dream
+dream of N / dream about N / dream that SV
+
+complain
+complain of N / complain about N / complain that SV / complain to N about N
+
+boast
+boast of N / boast about N / boast that SV / boast O
+
+be sure
+be sure of N / be sure that SV
+
+be conscious
+be conscious of N / be conscious that SV
+
+be aware
+be aware of N / be aware that SV
+
+be ignorant
+be ignorant of N / be ignorant that SV
+
+be proud
+be proud of N / be proud that SV
+
+be ashamed
+be ashamed of N / be ashamed that SV
+
+be afraid
+be afraid of N / be afraid that SV
+
+be careful
+be careful of N / be careful that SV
+
+be convinced
+be convinced of N / be convinced that SV
+
+be desirous
+be desirous of N / be desirous that SV
+
+be fearful
+be fearful of N / be fearful that SV
+
+be hopeful
+be hopeful of N / be hopeful that SV
+
+SUGGEST 型
+suggest
+suggest that S V原 / suggest that S should V原 / suggest that SV(直説法) / suggest to N that SV
+
+propose
+propose that S V原 / propose that S should V原
+
+recommend
+recommend that S V原 / recommend that S should V原
+
+urge
+urge that S V原 / urge that S should V原
+
+request
+request that S V原 / request that S should V原
+
+require
+require that S V原 / require that S should V原
+
+demand
+demand that S V原 / demand that S should V原
+
+insist
+insist that S V原 / insist that S should V原 / insist that SV(直説法)
+
+ask
+ask that S V原 / ask that S should V原
+
+order
+order that S V原 / order that S should V原
+
+command
+command that S V原 / command that S should V原
+
+mandate
+mandate that S V原 / mandate that S should V原
+
+advise
+advise that S V原 / advise that S should V原
+
+decide
+decide that S V原 / decide that S should V原
+
+determine
+determine that S V原 / determine that S should V原
+
+arrange
+arrange that S V原 / arrange that S should V原
+
+BELIEVE 型
+believe
+believe that SV / believe O to be C / believe O C
+
+suppose
+suppose that SV / suppose O to be C / suppose O C
+
+consider
+consider that SV / consider O to be C / consider O C
+
+assume
+assume that SV / assume O to be C / assume O C
+
+claim
+claim that SV / claim O to be C / claim O C
+
+think
+think that SV / think O to be C / think O C
+
+know
+know that SV / know O to be C / know O C
+
+hold
+hold that SV / hold O to be C / hold O C
+
+find
+find that SV / find O to be C / find O C
+
+feel
+feel that SV / feel O to be C / feel O C
+
+show
+show that SV / show O to be C / show O C
+
+
+
+
+
