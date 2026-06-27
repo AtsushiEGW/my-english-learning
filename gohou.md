@@ -277,7 +277,7 @@
 
 - The new CEO was endowed with exceptional leadership skills
 
-### acquaint 人 with 物 (人に物を知るきっかけを与える)
+### acquaint 人 with 物 (知らせる)
 
 - `get acquainted with ~ (~と知り合いになる)`
 - Through social media, it's easier to get acquainted with people who share your interests.
@@ -721,7 +721,9 @@
 
 - 以下の２つの語法を取り、かつ「認識」の意味を持つ
 - `believe that SV` 「〜だと信じている」
-- `believe 人 to be C` または `believe 人 C` 「人がCであると信じている」
+- `believe 人 to V` 「人がVであると信じている」
+- `to V` は状態動詞かbe動詞が一般的。be 動詞の場合の `to be` は省略されることがある
+- 受動態で使われることも多い
 
 ### believe
 
@@ -731,44 +733,508 @@
 - I believe that she is talented. --> I believe her to be talented.
 - I believe that she *was* talented. --> I believe her to *have been* talented.
 
-### suppose
-### consider
-### assume
-### claim
-### think
-### know
-### hold
-### find
-### feel
-### show
+### suppose (思っている)
+
+- I supposed that they would call our name eventually.
+  - eventually: ついに、ようやく
+- We supposed the children to be asleep.
+- `be supposed to V`
+  - 予想期待 / 予定 / 義務 の３つの意味がある
+  - ただし全て `すると思われている` と考えてその後に予定か義務かを文脈に照らして考えたら良い
+  - The training seminar is supposed to last half a day.
+
+### consider (みなす、考える)
+
+- Doctors consider that laughter is good for health.
+- Many people consider Edison to have invented some of the most important technologies used today.
+
+### assume (思っている・思い込む)
+
+- I assume that she already knows the news.
+- I assume her to already knows the news.
+
+### claim (主張する)
+
+- He claims that he knew the outcome in advance.
+- Are you claiming the contract to be invalid ?
+  - contract: 契約
+  - invalid: 無効な
+
+### think (思っている)
+
+- Coffee is thought to be beneficial for health when drunk in moderation.
+  - beneficial: 有益な
+  - moderation: ほどよさ --> in moderation: 適度に
+
+### know (知っている、気づいている)
+
+- The company's pens are known to be durable and comfortable to write with.
+  - durable: 耐久性のある
+  - comfortable は tough 構文を作る形容詞。(This river is dangerous to swim in.)
+- 不定詞ではなく前置詞のtoを続ける構文 `be known to N (Nに知られている)` も重要
+  - This technique is known to most data engineers.
+
+### hold (思っている、考えている) [考えを心に抱く]
+
+- I hold that my reaction was justified.
+  - justify: 正当化する
+  - S is justified (Sは正当化される --> Sはもっともである)
+
+### find (わかる、思う)
+
+- I found that she was fascinating to talk to.
+  - fascinating: 魅力的な (tough構文を作る形容詞)
+- I found her to be a fascinating conversation partner.
+
+### feel (感じる、思う)
+
+- We felt that the guitar was a good deal.
+  - deal: お買い得品
+- We felt the guitar to be a good deal.
+
+### show (示す)
+
+- The evidence shows that the suspect is guilty.
+- The evidence shows the suspect to be guilty.
 
 ## BE 型
 
+- これは説明は不要でしょう。
+
 ## GIVE 型
+
+- `give 人 物`
+- 第３文型に書き換えると `give 物 to 人` になる
+
+### give
+
+- Can you give me a hand ?
+
+### do
+
+- Could you do me a favor and keep an eye on my bag for a minute ?
+  - favor: 親切な行為 --> 親切な行為を与えてくれますか？ --> お願いがあるのですが
+
+### hand (手渡す)
+
+- I handed the cashier my credit card.
+
+### allot (割り当てる)
+
+- Speakers are alloted 20 minutes each to give their speeches.
+
+### award (授与する)
+
+- The panelists awarded Vivian Chu the prize for best short stroy.
 
 ## BUY 型
 
+- `give 人 物`
+- 第３文型に置き換えると `buy 物 for 人` になる
+- 人部分がなくとも意味的に成立する動作
+
+### get (買って与える)
+
+- Can I get you something to drink ?
+
+### cook
+
+- She cooks her family dinner every night.
+
+### prepare
+
+- Tomoko prepared her guests some Japanese green tea.
+
+### sing
+
+- The singer sang the audience some of his most popular songs.
+
+### find
+
+- Jarrod found me the book I've been looking for in the library.
+
 ## TAKE 型
+
+- 「奪う」系の意味
+- `take 人 物`
+
+### take 人 時間/努力
+
+- 人はよく省略される
+- `It takes 時間/努力 for 人 to V (Vするのに~かかる)`
+  - 仮主語構文
+  - for 人 は to 不定詞の意味上の主語
+
+- It took me three hours to finish my homework.
+- It takes a lot of practice to master a skill.
+- この時間/努力が関係代名詞の what になって what it takes to V (Vするのにかかるもの,Vするのに必要な物)
+- よって `have what it takes to V (Vするのに必要な素養を持っている)`となる
+- She has what it takes to become an entrepreneur.
+  - entrepreneur: 起業家
+
+### cost 人 金/命 (犠牲になる) [人から金/命を奪う]
+
+- The doctor's carelessness cost the patient his life.
+
+### save 人 金/手間 (節約できる, 省ける)
+
+- Our grocery online delivery service will save you the time it would take you to go to the supermarket.
+
+### spare 人 手間 (省ける)
+
+- spare は 直接目的語に来る名詞によって与える系と奪う系になる
+  - `spare 人 マイナス単語 (省く)` 奪う系
+  - `spare 人 金/時間 (割く)` 与える系
+  - マイナス単語は後から説明が加えられるので the がつくことが多いし、金/時間は不定量なので `a few` `some` などがつくことが多い
+- Your e-mail spared me the trouble of going there.
+  - trouble: 手間
+- Could you spare me a few minutes ?
+
+### owe 人 金 (借りる) [奪う --> 借りている]
+
+- I owe him ten dollars. 
+- --> I owe ten dollars to him. とすることもできる。同じ意味だが、「１０ドルがあるのは彼のおかげ」と考えて、
+  - `owe A to B (AがあるのはBのおかげ)`という表現になる
+  - I owe my success to my loving and supporting wife.
+
+### deny 人 物 (与えない)
+
+- In some regions, girls are denied access to education due to their gender.
+  - `S is denied access to 場所` アクセスが拒否される
+  - `S is denied the right to V` 権利が奪われる
+  - `S is denied te opportunity to V` 機会が奪われる
+
+### refuse 人 物 (与えない)
+
+- The supervisor refused the workers their coffee break.
+
 
 ## ASK 型
 
-## 使役動詞
+- `ask 人 物`
+- `ask 物 of 人` の形に書き換えられ、こちらが主に使用される場合が多い
 
+### ask (要求する・尋ねる)
+
+- May I ask you a favor ? / May I ask a favor of you ?
+- May I ask you a question ? / May I ask a question of you ?
+
+### expect 物 of 人 (期待する)
+
+- Too much is expected of young athletes these days, which can lead to overtraining and injuries.
+
+## 使役動詞 (make/have/let)
+
+- C はV原型
+- 受動態は to V となる --> `be made to V`
+
+### make OC
+
+- What makes you want to be an AI engineer ?
+- Be careful because this medicine makes you feel drowsy.
+  - drowsy: 眠い
+- Drones make it possible for farmers to monitor large fields easily.
+- We were made to wait in line for hours.
+  - in line: 列に並んで
+
+### have OC
+
+- The customs inspection officer had me open my suitcase.
+  - customs inspection officer: 税関職員
+- I had my hair cut at the local salon yesterday.
+
+### let OC
+
+- The teacher let the students leave five minutes early.
+- Let me explain how to get there.
+- `have 人 Ving (人にVさせておく)`
+- `I won't/can't have 人 Ving (人にVさせておくわけにはいかない)`
+  - I won't have you talking to me like that.
+ 
 ## 知覚動詞
 
-## 使役もどき
+- C には 原型/Ving/Vpp のいずれも使える
+- Ving だとVの途中を知覚したことになり、原型だと一部始終を知覚したことになる
+
+### see
+
+- He was seen going into a coffee shop with his friend.
+
+### hear
+
+- She thought she heard her name called, but no one was there.
+
+### catch (目撃する)
+
+- I caught my father eating ice cream late at night.
+
+### find (わかる、気づく、思う)
+
+- She finds herself giving her grandchildren too many treats.
+- I find it difficult to resist eating sweets when I'm stressed.
+
+### watch
+
+- Mr. Clark came to the soccer game to watch his son play.
+
+## 使役もどき (keep/leave/get/set/hold)
+
+- C に原型が来ない
+
+### keep / leave (させっぱなし)
+
+- keep は 意図的にさせっぱなしにする。leave は意識無意識問わずさせっぱなし
+
+- I'll keep my schedule open.
+  - open は形容詞
+  
+### get
+
+- `get 人 to V`
+  - The car dealer got me to purchase an extended warranty.
+- `get 人 Vpp` 
+  - Andrea got her blouse caught in the zipper of her coat.
+  - `be caught in ~ (~に挟まれて動けなくなる )`
+- `get 人 Ving`
+  - get the machine working
 
 ## CALL 型
 
+- `call O C (OをCと呼ぶ)`
+- 命名、希望系統の動詞
+
+### call (呼ぶ)
+
+- My family call me stubborn.
+  - stubborn: 頑固な
+
+### name (名付ける)
+
+- Adam named the woman Eve.
+
+### elect (選ぶ)
+
+- We elected him captain of our basketball team.
+  - Cに役職が来ると冠詞は不要
+
+### appoint (任命する)
+
+- The board of directors appointed Sarah interim CEO.
+  - the board of directors: 取締役会
+  - interim: 暫定の
+
+### want / would like (望む)
+
+- The waiter asked me how I want my steak cooked.
+- I'd like my steak well done.
+- Mr. Ozawa wants the audience quiet.
+- Would you like the package delivered to your office or home ?
+
 ## ENABLE 型
+
+- `enable 人 to V (人がこれからVすることを可能にする)`
+- Sによって人がVできる。人がVできる状況をSが作り出す。
+- 訳し方はSによってSV を単語のニュアンスに合わせて調整する
+
+### enable
+
+- AI-powered translation devices enable travelers to communicate easily around the world.
+
+### encourage (励ます、勧める)
+
+- Friends encourage each other to try new things.
+
+### invite (依頼する)
+
+- Anyone interested in the job opening is invited to contact HR.
+  - `人 is invited to V` 「人はVするように依頼されている」-->「人はVしてください」
+  - job opening: 求人
+
+### expect (期待する)
+
+- Passengers are expected to check in at least two hours before their flight.
+- `be expected to V` 予定、義務。
+- `be supposed to V` と同じ. `be set to V` ともいう
+
+### wait for 人 to V (待つ)
+
+- I waited for the doctor to call my name.
+
+### depend on 人 to V (当てにする)
+
+- I depend on my mother to make my lunch.
+
+### call for 人 to V (呼びかける、求める)
+
+- The fans are calling for the coach to resign after a series of losses.
+  - resign: 辞職する
+  - a series of losses: 連敗
 
 ## HELP
 
+- Cは原型が取れる
+- 基本的には `help 人`となり、何を手伝うかを明確化する場合は `help 人 with 内容`
+- Could you help me with this work ?
+- Olivia uses an app to help her keep track of her schedule.
+  - keep track of ~ (~の最新の状態を把握する)
+- `help V原 (Vするのに役立つ)`
+  - Meditation could help reduce the risk of heart disease and dementia.
+    - dementia: 認知症
+- ちなみに 
+  - `assist 人 in/with 内容`
+  - `assist 人 in Ving` という形をとる
+
+
+## REGARD 型
+
+- `regard A as B (AをBとみなす)`
+
+### regard
+
+- Paper bags are regarded as less harmful to the environment than plastic bags.
+
+### refer to (いう)
+
+- Bilingual speakers often alternate between two languages in a conversation. This language feature is referred to as code-switching.
+  - alternate between ~: ~を交互に行ったり来たりする
+  - be referred to ~: ~ と言われている
+
+### quote 人 as saying ~ (人は~と述べている)
+
+- `be quoted as saying ~` で、〜と言っていると引用されている（報じられている）
+- The company president was quoted as saying he expected the new product to be a great success.
+
+# V A 前置詞 B となる動詞の語法
+
+## V A on B
+
+### 影響の on
+
+- have an influence/impact/effect on
+- put/lay/place an emphasis/stress on
+- blame A on B
+- impose A on B --> impose restrictions on ~ 制限を課す
+
+### 集中の on
+
+- concentrate A on B
+- focus A on B
+- center A on B
+
+### 例文
+
+- The weather has a big influence on people's mood.
+- The EU is considering imposing restrictions on AI for potentially dangerous use.
+- We should focus our attention on solving this urgent problem of global warming.
+
+## V A with B
+
+### 一緒にの with
+
+- connect A with B
+- associate A with B
+- combine A with B
+
+### 相手の with
+
+- compare A with B
+- contrast A with B
+- share A with B
+- confuse A with B
+
+### 例文
+
+- The Hokuriku Shinkansen Line connects Tokyo with Tsuruga.
+- Physical health is closely associated with mental well-being.
+  - be associated with 関連している
+- The shoeprints from the crime scene were compared with te suspects' shoes.
+- A temporary visa is not to be confused with permanent residency.
+
+## V A to B
+
+### 方向系統
+
+- add A to B
+- attach A to B
+- expose A to B
+- lead A to B
+- distribute A to B
+- transfer A to B
+  
+### 会話表現
+  
+- leave A to B
+- introduce A to B
+- invite A to B
+- treat A to B
+- remember A to B
+
+### 捧げる系
+
+- devote A to B (捧げる)
+- devote oneself to Ving (専念する)
+- be devoted to Ving (専念する)
+- dedicate A to B (専念する)
+- dedicate oneself to Ving (専念する)
+- be dedicated to Ving (専念する)
+- commit A to B （委ねる）
+- commit oneself to Ving (自分を委ねる、専念する)
+- be committed to Ving (委ねている状態、専念する)
+
+### 合わせる系統
+
+- adapt A to B
+- adjust A to B
+- accustom/acclimate A to B
+- apply A to B
+- conform A to B
+- relate A to B
+- link A to B
+
+### 制限・限定・結果系統
+
+- limit A to B
+- restrict A to B
+- confine A to B
+
+### V 結果 to 原因
+
+- owe 結果 to 原因
+- attribute 結果 to 原因
+- ascribe 結果 to 原因
+- credit 結果 to 原因 (credit 原因 with 結果)
+
+### 例文
+
+- Sales tax will be added to the price.
+- I've attached a PDF of me resume to this e-mail.
+- Good-bye. Remember me to your wife.
+- He devotes himself to raising his children.
+- The company is devoted to providing excellent customer service.
+- The screenwriter adapted a popular children's novel to the big screen.
+- We must conform our behavior to social norms in different cultures.
+  - social norms: 社会規範
+- Enrollment in this course is restricted to senior students.
+  - enrollment in: への登録
+- During the lockdown, many people were confined to their homes for weeks.
+- The decline in bee populations is attributed to the use of pesticides.
+  - pesticide: 殺虫剤
 
 
 
 
----
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 語法一覧
 
