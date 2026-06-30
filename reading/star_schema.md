@@ -206,3 +206,260 @@ No assumptions are made about your level of experience. If you are new to dimens
 design, you will probably want to read this book from cover to cover. Experienced practitioners
 may prefer to skip directly to areas of particular interest. The next section provides advice on
 how to proceed.
+
+
+
+
+
+
+
+Analytics that cross process boundaries are extremely powerful. This holds true within a
+subject area and across the enterprise. As the previous chapter showed, process-focused
+analytics require separate fact tables, and cross-process analytics require bringing this
+information together. This is accomplished by drilling across, and its success or failure hinges
+on dimensions.
+This chapter focuses on insuring cross-process capability through conformed dimensions.
+With the right dimension design and content, it is possible to compare facts from different
+fact tables, both within a subject area and across the enterprise. Many powerful metrics can
+only be provided in this manner. Incompatible dimensions, on the other hand, prevent
+drilling across. The resulting stovepipes can be frustrating.
+The requirements for conformed dimensions are spelled out as a series of rules. It is
+possible to memorize these rules and follow them blindly, but students of dimensional
+design are better off understanding why they are important. Before enumerating the
+conditions for conformance, this chapter takes a closer look at how dimensions make or
+break a successful drill-across.
+Conformance, it turns out, can take many forms. This chapter will look at several ways
+that dimensions can conform and offer practical advice to keep your designs out of trouble.
+Conformed dimensions can do more than enable drilling across. They can serve as the
+focus for planning enterprise analytic capability. This chapter closes with practical
+considerations surrounding conformance in each of the major data warehouse
+architectures—the Corporate Information Factory, the dimensional data warehouse “bus”
+architecture, and the stand-alone data mart.
+
+## The Synergy of Multiple Stars
+
+Dimensional designs are usually implemented in parts. Regardless of architecture style, it is
+impractical to organize a single project that will encompass the entire enterprise. Realistic
+project scope is achieved by subdividing the enterprise into subject areas and subject areas
+into projects.
+Over time, as each new star is brought online, the organization receives two kinds of
+analytic benefits. First, and most obviously, it becomes possible to analyze the business
+process measured by the star. The value of this benefit alone is usually significant. People
+gain valuable insight into business activity, whether they are directly involved in the process,
+responsible for it, or simply interested parties. Some processes, such as sales, may gain
+attention from all levels of the enterprise.
+With each new star comes a second kind of benefit, often expected but sometimes
+unanticipated. Not only does the star afford insight into a new business process, but it also
+allows the process to be studied in conjunction with others. Again, this kind of analysis may
+be of interest to people who are involved in a particular process area, but it is equally likely
+to interest higher levels of corporate management.
+A powerful example of cross-process analysis appeared in Chapter 4, “A Fact Table for
+Each Process.” The report in Figure 4-13 compared information from numerous processes:
+sales call activity, delivery of sales proposals, orders, and shipments. Looking across these
+processes to form a consolidated picture of business activity is highly useful for sales
+management, company executives, directors, and investors.
+The report in Figure 4-13 also contained a measurement called yield, which represented the
+ratio of sales calls made to orders taken. This single metric may be one of the most important
+indicators tracked by interested parties, and it can only be constructed by crossing process
+boundaries. As Chapter 4 advised, schema designers need to be alert to the existence of
+business measurements that cross process boundaries. Because these measurements do not
+exist as a column in a table somewhere, they may be easily lost in the shuffle if not documented
+and targeted for delivery.
+Every business has chains of linked processes, often beginning with product development
+or acquisition, extending through customer acquisition, and culminating in the collection of
+revenues. These chains can be found at micro- and macro-levels. Within a subject area such as
+sales, for example, there may be a series of linked processes like those in Figure 4-13. Sales are
+also a participant in a macro-level chain, connecting product manufacturing, sales, marketing,
+customer support, and finance.
+The stars that represent each process connect to one another through common dimensions.
+This can be envisioned graphically, as depicted in Figure 5-1. Orders, shipments, and a variety of
+other stars relate to one another through a set of dimensions. These dimensions, which appear
+in the center column of the diagram, serve as a framework, across which process comparisons are
+supported. Any two fact tables that link to the same dimension can theoretically be compared
+using the drill-across technique described in Chapter 4.
+At a logical level, when a series of stars share a set of common dimensions, the dimensions
+are referred to as conformed dimensions. As suggested in the previous chapter, two fact tables do
+not have to share the same physical dimension table to support comparison. If the separate
+dimension tables conform, it will be possible to drill across them.
+When dimensions do not conform, short-term victories give way to long-term defeat.
+Orders and shipments stars, for example, might be implemented one at a time. As each is
+brought online, new insights are afforded to various groups of interested parties. In this
+respect, each successful implementation reflects well on the data warehouse team that
+brought it to fruition. If these individual stars do not share a common view of what a
+customer is, or what a product is, that goodwill may eventually give way to indifference or
+disdain. While it is possible to study orders or shipments, it is not possible to compare them.
+At best, the response is frustration over a missed opportunity. At worst, a general distrust of
+the analytic infrastructure develops.
+As you will see later in this chapter, dimensions can conform in a variety of ways. While
+conformance may be conveyed by a diagram like the one in Figure 5-1, such pictures
+quickly become difficult to lay out and understand. The crucial concept of conformance is
+often better depicted through alternate means.
+As the key to long-term success, conforming dimensions are crucial in any data
+warehouse architecture that includes a dimensional component. Before spelling out the
+requirements for conformance and their implications, let’s take a closer look at how they
+support, or fail to support, drilling across. Understanding how and why this process breaks
+down sheds important light on the concept of dimensional conformance.
+
+## Dimensions and Drilling Across
+
+Dimensions are the key enablers of the drill-across activity that brings together information
+from different processes. Drill-across failure occurs when dimensions differ in their structure
+or content, extinguishing the possibility of cross-process synergy. Dimension tables need not
+be identical to support drilling across. When the attributes of one are a subset of another,
+drilling across may also be possible.
+
+## What Causes Failure?
+
+Dimensions and their content are central to the process of comparing fact tables. In the
+first phase of drilling across, dimensions are used to define a common level of aggregation
+for the facts from each fact table queried. In the second phase, their values are used to
+merge results of these queries. Dimensional incompatibilities can disrupt this process. The
+stars in Figure 5-2 are rife with examples.
+The stars in Figure 5-2 describe two processes: orders and returns. Each has been
+implemented by a separate department and resides in a separate database. Individually,
+these stars permit valuable analysis of the processes they represent. Both include dimension
+tables representing day, customer, and product. Given these commonalities, it is reasonable
+to expect these stars should permit comparison of these processes. For example, one might
+ask to see returns as a percentage of orders by product during a particular period. The two
+drill-across phases, as introduced in Chapter 4, would unfold as follows:
+1. A query is issued for each fact table, aggregating the respective facts (quantity
+ordered and quantity returned) by product.
+2. These intermediate result sets are merged based on the common product names,
+and the ratio of quantity ordered to the quantity returned is computed.
+A similar process might be followed to drill across various other dimension attributes
+such as product type or category, or across dimension attributes from the day, customer, or
+salesperson tables.
+Unfortunately, several factors prevent these stars from supporting this activity, at least
+when it comes to products. The problems lie in the respective product tables. Differences
+in their structure and content get in the way of comparing orders and returns.
+
+## Differences in Dimension Structure
+
+The two product dimension tables have many differences, any one of which can foil an
+attempt to drill across. First, consider differences in the structure of the dimension tables.
+•
+•
+The product dimension table in the orders star contains a type dimension; the one
+in the returns star does not. It may be difficult or impossible to compare orders to
+returns based on product type depending on other characteristics of the tables.
+Columns that appear to be the same thing are named differently in the two stars.
+For example, the column that contains the name of the product is called product in
+the orders star, and prod_name in the returns star. A similar situation exists for the
+columns that contain category descriptions. These differences may stand in the way
+of drill-across operations as well.
+It can be tempting to dismiss these differences since a skilled developer might be able
+to work around them. Although product type is not present in the orders star, a developer
+might be able to match each product from the orders star to a product type in the returns
+star. The SKU, which is the natural key, might be used to support this lookup process. After
+these equivalences are identified, orders could be aggregated by type and compared to
+returns.
+Similarly, a developer could work around the differences in column names to compare
+orders and returns by category. Applying his or her knowledge of column equivalencies, the
+developer groups orders by category, and groups returns by prod_cat. When joining these
+intermediate result sets, the developer would match the category from the orders query
+with prod_cat from the returns query.
+These workarounds are further examples of what Chapter 4 referred to as “boiling the
+frog.” They range from simple to complex, but each compensates for design-level
+shortcomings by complicating the reporting process. These kinds of workarounds have
+many drawbacks:
+•
+•
+•
+•
+Specific knowledge is required to drill across.
+It may not be possible for anyone but the most skilled developers to use
+workarounds to compare the processes.
+Workarounds risk inconsistent and inaccurate results when applied incorrectly.
+Workarounds stand in the way of the automated generation of drill-across reports
+for ad hoc reporting tools.
+Not every structural incompatibility can be overcome by a workaround. If the two stars
+have different definitions of a product, there may be deeper difficulties. This might occur if
+one star takes into account packaging differences, while the other does not. Timing may
+also get in the way. If one star collects data on a monthly basis, while the other does so on
+a weekly basis, there would be virtually no way to compare this data. Weeks and months
+cannot be rolled up to any common level of summarization.
+Last, reliance on these workarounds depends on some consistency in the content of the
+two versions of the dimension. If there are also content differences, it may become impossible
+to overcome structural differences.
+
+## Differences in Dimension Content
+
+In the case of the stars in Figure 5-2, further difficulties are evident when you examine the
+content of the product dimension tables:
+•
+Product names and categories are formatted differently. The orders star uses mixed
+case and punctuation; the returns star formats data in all caps without punctuation.
+These differences will get in the way during the merge phase of drilling across since
+these values are the basis of the merge.
+Names are not consistent. SKU 3333-01 is called “9
+• × 12 bubble mailer” in the
+orders star, and “STANDARD MAILER” in the returns star. It may be that a change
+in product name was handled as a type 1 change for orders and was ignored for
+returns. The inconsistent names will impede the merging of intermediate result
+sets for queries that involve the product name.
+•
+The product with the natural key 4444-22 has one row in the orders star but two
+rows in the returns star. It appears that this product underwent a change in
+category that was treated as a type 1 change in the orders star, and a type 2 change
+in the returns star. It is possible to compare orders and returns by category, but the
+orders will skew toward the more recent value.
+•
+The product with SKU 6666-22 is present in the orders star but not in the returns
+star. This will not impede drilling across, but is an indicator that inconsistencies
+exist between the tables.
+•
+The product with SKU 5555-22 is assigned different surrogate key values in the two
+stars. Care must be taken when joining tables.
+Again, it may be possible to work around some of these limitations, but the impact on
+the reporting process would be severe, and not all the issues can be overcome. For
+example, developers might try to address the first limitation by converting all text to
+uppercase and stripping punctuation before joining two intermediate result sets together.
+This will have a negative impact on query performance, since the product name for each
+granular fact must be adjusted and sorted prior to aggregation. This will not help in
+situations where product names are recorded differently, as is the case with product
+3333-01.
+Some of the limitations might be dealt with by only referring to SKUs when querying
+each star, then using a single dimension table to determine the associated dimension
+values. The facts from each star could then be aggregated before merging intermediate
+result sets. Again, this additional processing will severely hamper performance. It will
+require that each report be constructed by a skilled developer and thus eliminate any
+chance that a business intelligence tool could generate a drill-across report. Furthermore, it
+will not work in situations where one table omits a particular product, or where a product
+has multiple rows in one of the dimension tables.
+None of these considerations takes into account the confusion that users may experience
+when trying to interpret the results. How does one compare orders and returns for a product
+if each star specifies the product differently? Which product name should be placed on the
+report? What if this report is compared to one that uses the other name? The last two
+incompatibilities on the list may not directly hamper a drill-across operation but can lead to
+situations where analysts working with data sets from the two stars produce erroneous results
+by linking a dimension table to a fact table from the other star.
+
+## Preliminary Requirements for Conformance
+
+To support successful drill-across comparisons, designers must avoid incompatibilities like
+those in Figure 5-2. The issues that rendered the two product dimension tables incompatible
+can be addressed by requiring that the two tables be the same. As noted in Chapter 4, there
+are two crucial parts to this sameness: the tables must be the same in structure and in content.
+Same Structure Structurally, the tables should have the same set of dimension columns.
+This avoids the need to piece together missing information such as the product_type
+column. Corresponding dimension columns should have the same names so there is no
+ambiguity in where their equivalencies lie. They should also have the same data type
+definitions since their content will be identical.
+These structural equivalences support the first phase of a drill-across operation. The
+dimension columns can be relied upon to define a consistent scope of aggregation for each
+fact table. In the first phase of drilling across, each fact table can be queried using the same
+dimensional groupings, without the need for a special processing workaround. Additionally,
+the structural compatibility supports a successful merge in the second phase, although
+content will also play a crucial role.
+Same Content In terms of content, the values found in dimension columns must be
+expressed identically. If the name of product 3333-01 is “9 × 12 bubble mailer” in the orders
+star, it should be “9 × 12 bubble mailer” in the returns star. This common value will allow
+intermediate results from each star to be joined during the second phase of a drill-across
+operation. Use of consistent value instances avoids the need to clean up or convert
+corresponding column values so that they match, and guarantees that values will support
+the merge of intermediate results.
+Corresponding dimension tables should provide consistent results when substituted for
+one another. In terms of content, this requires that they contain the same set of rows, that
+corresponding rows share the same surrogate key values, and that slow change processing
+rules have been applied consistently. These requirements, however, do not apply in cases
+where the corresponding dimension tables describe different levels of summarization.
